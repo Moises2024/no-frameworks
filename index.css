@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+}
+
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+li {font-size: 1.30em;}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px; 
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+    color: whitesmoke;
+    background-color: dodgerblue;
+}
+
+button:hover {
+    background-color: royalblue;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.color-acento {
+    color: blueviolet;
+}
+
+header {
+    background-color: rgb(230, 230, 230);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.40em;
+}
+
+header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: gainsboro;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 2px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: darkslateblue;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url("imagenes/programador.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero button {
+    font-size: 1.75em;
+}
+
+#somos-proya .container {
+    text-align: center;
+    padding: 100px 10px;
+}
+
+#nuestros-programas {
+    background-color: rgb(60, 60, 60);
+    color: azure;
+    text-align: center;
+}
+
+#nuestros-programas p {
+    display: none;
+}
+
+#nuestros-programas .container{
+    padding: 100px 12px;
+
+}
+
+#nuestros-programas h2 {
+    margin-top: 0;
+    font-size: 2.8em;
+}
+
+#nuestros-programas .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url("imagenes/front-end.png");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url("imagenes/full-stack.png");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url("imagenes/python.jpg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 100px 10px;
+}
+
+#caracteristicas li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+.final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    height: 80vh;
+}
+
+.final h2 {
+    font-size: 5vw;
+}
+
+.final button {
+    font-size: 1.75em;
+}
+
+footer {
+    background-color: rgb(200, 200, 200);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(111, 111, 111);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
